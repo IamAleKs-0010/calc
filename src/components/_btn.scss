@@ -3,13 +3,17 @@
     @use '../utils/variables' as v;
 
     .btn {
-        transition: background-color .3s ease;
+        transition: background-color .2s ease;
 
         &--special {
             background-color: f.getColor('bg-special');
 
             &:hover {
                 background-color: darken(f.getColor('bg-special'), 3%);
+            }
+
+            &:active {
+                background-color: darken(f.getColor('bg-special'), 6%);
             }
         }
 
@@ -21,6 +25,9 @@
             &:hover {
                 background-color: darken(f.getColor('bg-operator'), 10%);
             }
+            &:active {
+                background-color: darken(f.getColor('bg-operator'), 18%);
+            }
         }
 
         &--number{
@@ -28,6 +35,9 @@
             
             &:hover { 
                 background-color: darken(f.getColor('bg-number'), 5%);
+            }
+            &:active {
+                background-color: darken(f.getColor('bg-number'), 10%);
             }
         }
 

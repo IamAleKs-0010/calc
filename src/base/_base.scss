@@ -7,6 +7,10 @@
         src: url('../assets/fonts/Roboto-Thin.ttf');
     }
 
+    * { 
+        box-sizing: border-box;
+    }
+
     body {
         margin: 0;
         background-color: f.getColor('bg-color');
@@ -22,5 +26,13 @@
         background-color: transparent;
         border: 1px solid f.getColor('bg-display');
         cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    a {
+        text-decoration: none;
     }
 
