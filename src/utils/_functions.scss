@@ -1,0 +1,6 @@
+
+    @use 'variables' as v;
+
+    @function getColor($color) {
+        @return map-get(v.$palette, $color)
+    }

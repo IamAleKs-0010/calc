@@ -1,0 +1,26 @@
+
+    @use '../utils/functions' as f;
+    @use '../utils/variables' as v;
+
+    @font-face {
+        font-family: Roboto;
+        src: url('../assets/fonts/Roboto-Thin.ttf');
+    }
+
+    body {
+        margin: 0;
+        background-color: f.getColor('bg-color');
+        color: f.getColor('light');
+        font-family: 'Roboto', sans-serif;
+    }
+
+    button {
+        padding: 0;
+        font-size: 1.8rem;
+        font-family: 'Roboto', sans-serif;
+        color: f.getColor('light');
+        background-color: transparent;
+        border: 1px solid f.getColor('bg-display');
+        cursor: pointer;
+    }
+
